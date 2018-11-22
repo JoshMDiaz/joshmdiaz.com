@@ -1,16 +1,16 @@
 import React from 'react'
-
 import Layout from '../components/layout'
-import Image from '../components/image'
+import Banner from '../components/Banner/Banner'
+import About from '../components/About/About'
+import Work from '../components/Work/Work'
+import Contact from '../components/Contact/Contact'
 
 const IndexPage = () => (
   <Layout>
-    <h1>Hi people</h1>
-    <p>Welcome to my site.</p>
-    <p>I'm in the middle of redesigning - please stop by again!</p>
-    {/* <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-      <Image />
-    </div> */}
+    <Banner />
+    <About />
+    <Work />
+    <Contact />
   </Layout>
 )
 

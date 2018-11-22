@@ -1,0 +1,14 @@
+.banner {
+  background: $text-color;
+  color: $white-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  img {
+    width: 90%;
+    max-width: 300px;
+    position: absolute;
+    bottom: 0;
+  }
+}

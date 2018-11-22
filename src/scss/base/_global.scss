@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+SC:300,400,900');
+@import "~animate.css";
+
+html {
+  -ms-overflow-style: none;
+  overflow-x: hidden;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  @include font-family;
+  color: $text-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Fonts
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+h1 {
+  font-weight: $font-weight-extra-bold;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  &:hover {
+   text-decoration: none;
+   cursor: pointer;
+  }
+}
+strong {
+  font-weight: $font-weight-extra-bold;
+}
+
+section {
+  height: calc(100vh - 80px);
+  padding: 40px;
+}
+
+// Font Styling
+.uppercase {
+  text-transform: uppercase;
+}
+
+// cursor
+.cursor-pointer {
+  cursor: pointer;
+}
+
