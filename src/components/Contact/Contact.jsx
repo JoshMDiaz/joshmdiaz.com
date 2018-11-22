@@ -1,10 +1,13 @@
 import React from 'react'
+import SectionWrapper from '../Section/SectionWrapper';
 
 const Contact = () => {
   return (
-    <section className="contact">
-      Contact here
-    </section>
+    <SectionWrapper title="Contact" bgColor="blue">
+      <section>
+        <h3>contact things</h3>
+      </section>
+    </SectionWrapper>
   );
 }
  

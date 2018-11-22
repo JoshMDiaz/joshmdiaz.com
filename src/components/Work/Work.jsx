@@ -1,10 +1,13 @@
 import React from 'react'
+import SectionWrapper from '../Section/SectionWrapper';
 
 const Work = () => {
   return (
-    <section className="work">
-      Work here
-    </section>
+    <SectionWrapper title="Work" bgColor="black">
+      <section>
+        <h3>work things</h3>
+      </section>
+    </SectionWrapper>
   );
 }
  
