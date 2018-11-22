@@ -1,10 +1,11 @@
 import React from 'react'
+import SectionWrapper from '../Section/SectionWrapper';
 
 const About = () => {
   return (
-    <section className="about">
-      About here
-    </section>
+    <SectionWrapper title="About" bgColor="">
+
+    </SectionWrapper>
   );
 }
  

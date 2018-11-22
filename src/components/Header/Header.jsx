@@ -1,8 +1,11 @@
 import React from 'react'
+import logo from '../../images/logo.svg'
+import NavButton from '../NavButton/NavButton';
 
 const Header = () => (
   <header>
-    header here
+    <img src={logo} alt="logo"/>
+    <NavButton />
   </header>
 )
 

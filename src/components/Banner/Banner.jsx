@@ -1,11 +1,11 @@
 import React from 'react'
-import logo from '../../images/test.png'
-// import logo from '../../images/logo-white.svg'
+import me from '../../images/me_drawn.png'
 
 const Banner = () => {
   return (
     <section className="banner">
-      <img src={logo} alt="logo"/>
+      <h1>Josh<br />Diaz</h1>
+      <img src={me} alt="stylized drawing"/>
     </section>
   );
 }
