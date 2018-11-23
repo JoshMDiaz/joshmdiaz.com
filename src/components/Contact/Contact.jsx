@@ -1,5 +1,5 @@
 import React from 'react'
-import SectionWrapper from '../Section/SectionWrapper';
+import SectionWrapper from '../Section/SectionWrapper'
 
 const Contact = () => {
   return (

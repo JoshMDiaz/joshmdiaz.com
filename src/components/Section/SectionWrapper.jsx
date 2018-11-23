@@ -9,7 +9,7 @@ const colors = {
 
 const SectionWrapper = ({ title, bgColor, children }) => {
   return (
-    <div className={`section-wrapper ${title}`}>
+    <div className={`section-wrapper ${title.toLowerCase()}`}>
       <div className="title-section" style={{ background: colors[bgColor], color: bgColor ? '#FFFFFF' : '#292929' }}>
         <h2>{title}</h2>
       </div>

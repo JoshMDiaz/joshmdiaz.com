@@ -1,0 +1,7 @@
+.about {
+  .me {
+    @include border-radius(1000px);
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
