@@ -23,10 +23,12 @@ class NavButton extends Component {
   render() { 
     const { open, menuOpen } = this.state;
     return (
-      <div id="nav-button" className={open ? 'open' : ''} onClick={() => this.toggleMenu(!menuOpen)}>
-        <span></span>
-        <span></span>
-        <span></span>
+      <div id="nav-button" onClick={() => this.toggleMenu(!menuOpen)}>
+        <div className={`nav-icon ${open ? 'open' : ''}`}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     );
   }
