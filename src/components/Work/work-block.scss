@@ -1,0 +1,14 @@
+.work-block {
+  height: 50vh;
+  border-bottom: 2px solid $dark-gray-color;
+  img {
+    width: 80%;
+  }
+  a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

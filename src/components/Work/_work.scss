@@ -1,3 +1,12 @@
 .work {
-  
+  .content-section {
+    section {
+      padding: 0;
+    }
+    .work-block {
+      &:last-child {
+        border: 0;
+      }
+    }
+  }
 }

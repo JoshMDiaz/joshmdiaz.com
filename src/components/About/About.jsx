@@ -16,7 +16,7 @@ const About = () => {
         </div>
         <div>
           <ParagraphHeader header="What I Do" />
-          <p>I am a professional Web and App Developer. I specialize in Front-end development. I have a passion for the UI/UX aspect as well as the programming aspect of devloping beautiful products.</p>
+          <p>I am a professional Software Engineer. I specialize in Front-end web development. I have a passion for the UI/UX aspect as well as the programming aspect of developing beautiful products.</p>
           <p>I have been programming since I could walk. Just kidding, I was never a child prodigy. I have, however, always had the desire to excel at whatever I have been passionate about. Fortunately, I love this work.</p>
         </div>
         <div>

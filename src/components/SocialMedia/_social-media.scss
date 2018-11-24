@@ -1,0 +1,14 @@
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  width: 175px;
+  img {
+    height: 25px;
+    opacity: 1;
+    @include transition;
+    cursor: pointer;
+    &:hover {
+      opacity: .5;
+    }
+  }
+}
