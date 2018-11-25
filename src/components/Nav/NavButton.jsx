@@ -22,7 +22,9 @@ class NavButton extends Component {
           this.setState({ open: false });
         }, 250);
       });
-      this.scrollToSection(section);
+      if (!navButton) {
+        this.scrollToSection(section);
+      }
     } else {
       this.setState({ menuOpen: true, open: true, closing: false });
     }
