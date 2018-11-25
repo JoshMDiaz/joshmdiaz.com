@@ -1,11 +1,16 @@
 import React from 'react'
 import logo from '../../images/logo.svg'
-import NavButton from '../Nav/NavButton';
+import NavButton from '../Nav/NavButton'
+import Slide from 'react-reveal/Slide'
 
 const Header = () => (
   <header>
-    <img src={logo} alt="logo" className="animated fadeInLeft" />
-    <NavButton />
+    <Slide left>
+      <img src={logo} alt="logo" />
+    </Slide>
+    <Slide right>
+      <NavButton />
+    </Slide>
   </header>
 )
 

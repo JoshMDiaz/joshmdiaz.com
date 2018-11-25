@@ -1,6 +1,7 @@
 .work-block {
   height: 50vh;
   border-bottom: 2px solid $dark-gray-color;
+  overflow: hidden;
   img {
     width: 80%;
     max-width: 350px;

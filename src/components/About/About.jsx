@@ -2,6 +2,7 @@ import React from 'react'
 import SectionWrapper from '../Section/SectionWrapper'
 import ParagraphHeader from '../Section/ParagraphHeader'
 import me from '../../images/me.jpg'
+import Slide from 'react-reveal/Slide'
 import Scroll from 'react-scroll'
 const ScrollElement = Scroll.Element;
 
@@ -12,9 +13,11 @@ const About = () => {
         <section>
           <div>
             <ParagraphHeader header="Who I Am" />
-            <div className="picture-wrapper">
-              <img src={me} alt="me" className="me" />
-            </div>
+            <Slide left>
+              <div className="picture-wrapper">
+                <img src={me} alt="me" className="me" />
+              </div>
+            </Slide>
             <p>My name is Josh Diaz. I love playing tennis, pickleball, racquetball, ping pong and anything else with a racket or a paddle! I love my family and my two huskies. I enjoy doing side projects - anything to keep me busy.</p>
             <p>I am the Owner and CEO of Diaz Real Estate, LLC. We do Virtual Tours for real estate. <a href="https://diazre.com" target="blank" rel="noopener noreferrer">You can check us out here!</a></p>
             <p>I graduated from Utah Valley University with a Bachelors in Digital Media and an emphasis in internet Technologies. I played tennis in high school and college. I can't wait to tell my kids stories about the "good ol' days" when I nearly turned pro! (Even though there is no way that would have happened...)</p>

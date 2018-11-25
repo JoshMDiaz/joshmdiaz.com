@@ -1,11 +1,16 @@
 import React from 'react'
 import me from '../../images/me_drawn.png'
+import Slide from 'react-reveal/Slide'
 
 const Banner = () => {
   return (
     <section className="banner">
-      <h1 className="animated fadeInDown">Josh<br />Diaz</h1>
-      <img src={me} alt="stylized drawing" className="animated fadeInUp" />
+      <Slide down>
+        <h1>Josh<br />Diaz</h1>
+      </Slide>
+      <Slide up>
+        <img src={me} alt="stylized drawing" />
+      </Slide>
     </section>
   );
 }
