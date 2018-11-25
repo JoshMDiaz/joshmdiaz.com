@@ -1,0 +1,42 @@
+.work-block {
+  height: 50vh;
+  border-bottom: 2px solid $dark-gray-color;
+  overflow: hidden;
+  img {
+    width: 80%;
+    max-width: 350px;
+  }
+  a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media only screen and (max-width: 499px) {
+    &:last-child {
+      border: none;
+    }
+  }
+  @media only screen and (min-width: 500px) and (max-width: $screen-sm) {
+    border: none;
+    &:first-child {
+      border-right: 2px solid $dark-gray-color;
+      border-bottom: 2px solid $dark-gray-color;
+    }
+    &:nth-child(2) {
+      border-bottom: 2px solid $dark-gray-color;
+    }
+    &:nth-child(3) {
+      border-right: 2px solid $dark-gray-color;
+    }
+  }
+  @media only screen and (min-width: $screen-sm) {
+    &:first-child {
+      border-top: 2px solid $dark-gray-color;
+    }
+    img {
+      width: 60%;
+    }
+  }
+}
