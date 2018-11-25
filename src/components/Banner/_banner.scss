@@ -8,13 +8,23 @@
   position: relative;
   img {
     width: 90%;
-    max-width: 300px;
+    max-width: 400px;
     position: absolute;
-    bottom: 0;
+    bottom: -100px;
   }
   h1 {
     font-size: 96px;
     position: relative;
     top: -100px;
+  }
+  @media only screen and (min-width: $screen-sm) {
+    h1 {
+      top: 0;
+      font-size: 120px;
+    }
+    img {
+      bottom: 0;
+      right: 0;
+    }
   }
 }

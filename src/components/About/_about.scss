@@ -1,7 +1,27 @@
 .about {
-  .me {
-    @include border-radius(1000px);
-    width: 100%;
-    margin-bottom: 30px;
+  .picture-wrapper {
+    .me {
+      @include border-radius(1000px);
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+  @media only screen and (min-width: $screen-sm) {
+    position: relative;
+    section {
+      padding: 60px 30px 60px 80px;
+    }
+    .picture-wrapper {
+      position: absolute;
+      left: calc(50vw - 50px);
+      top: calc(50vh - 50px);
+      height: calc(100% - 330px);
+      .me {
+        top: calc(50vh - 50px);
+        margin: 0;
+        position: sticky;
+        width: 100px;
+      }
+    }
   }
 }

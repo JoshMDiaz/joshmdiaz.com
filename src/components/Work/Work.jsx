@@ -5,31 +5,36 @@ import pattern from '../../images/pattern.svg'
 import shy from '../../images/shyanne-diaz.png'
 import tayloredTies from '../../images/taylored-ties.png'
 import rdk from '../../images/rdk.png'
+import ties from '../../images/ties.jpg'
 import Scroll from 'react-scroll'
 const ScrollElement = Scroll.Element;
 
 const workExamples = [
   {
     logo: pattern,
-    color: '#FFFFFF',
+    // bgImage: ties,
+    // color: '0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.7)',
     company: 'pattern',
     url: 'https://www.pattern.com'
   },
   {
     logo: shy,
-    color: '#FAFAFB',
+    // bgImage: ties,
+    // color: '0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.7)',
     company: 'Shyanne Diaz',
     url: 'http://www.shyannediaz.com'
   },
   {
     logo: tayloredTies,
-    color: '#FFFFFF',
+    // bgImage: ties,
+    // color: '0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.7)',
     company: 'Taylored Ties',
     url: 'http://www.tayloredties.com'
   },
   {
     logo: rdk,
-    color: '#FAFAFB',
+    // bgImage: ties,
+    // color: '0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.7)',
     company: 'Ronin Dragon Karate',
     url: 'http://www.rdkutah.com'
   },

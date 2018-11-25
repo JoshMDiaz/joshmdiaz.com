@@ -4,7 +4,7 @@ import NavButton from '../Nav/NavButton';
 
 const Header = () => (
   <header>
-    <img src={logo} alt="logo"/>
+    <img src={logo} alt="logo" className="animated fadeInLeft" />
     <NavButton />
   </header>
 )

@@ -42,7 +42,7 @@ class NavButton extends Component {
     const { open, menuOpen, closing } = this.state;
     return (
       <div>
-        <div id="nav-button" onClick={() => this.toggleMenu(!menuOpen, null, true)}>
+        <div id="nav-button" className="animated fadeInRight" onClick={() => this.toggleMenu(!menuOpen, null, true)}>
           <div className={`nav-icon ${menuOpen ? 'open' : ''}`}>
             <span></span>
             <span></span>
