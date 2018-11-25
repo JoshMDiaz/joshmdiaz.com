@@ -19,7 +19,8 @@
       .me {
         top: calc(50vh - 50px);
         margin: 0;
-        position: sticky;
+        @include prefix(position, sticky);
+        position: -webkit-sticky;
         width: 100px;
       }
     }
