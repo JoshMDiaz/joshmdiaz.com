@@ -5,6 +5,8 @@ import pattern from '../../images/pattern.svg'
 import shy from '../../images/shyanne-diaz.png'
 import tayloredTies from '../../images/taylored-ties.png'
 import rdk from '../../images/rdk.png'
+import Scroll from 'react-scroll'
+const ScrollElement = Scroll.Element;
 
 const workExamples = [
   {
@@ -35,13 +37,15 @@ const workExamples = [
 
 const Work = () => {
   return (
-    <SectionWrapper title="Work" bgColor="black">
-      <section>
-        {workExamples.map((e, i) => (
-          <WorkBlock {...e} key={i} />
-        ))}
-      </section>
-    </SectionWrapper>
+    <ScrollElement name="work">
+      <SectionWrapper title="Work" bgColor="black">
+        <section>
+          {workExamples.map((e, i) => (
+            <WorkBlock {...e} key={i} />
+          ))}
+        </section>
+      </SectionWrapper>
+    </ScrollElement>
   );
 }
  

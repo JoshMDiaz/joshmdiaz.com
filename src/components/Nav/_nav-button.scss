@@ -1,7 +1,4 @@
 #nav-button {
-  position: fixed;
-  top: 30px;
-  right: 30px;
   .nav-icon {
     width: 30px;
     height: 15px;
@@ -42,6 +39,7 @@
     }
     &.open {
       span {
+        background: $white-color;
         &:nth-child(1) {
           top: 10px;
           width: 0;
