@@ -39,4 +39,23 @@
       width: 60%;
     }
   }
+  @media only screen and (min-width: $screen-xxl) {
+    border: none;
+    &:first-child {
+      border-right: 2px solid $dark-gray-color;
+      border-bottom: 2px solid $dark-gray-color;
+    }
+    &:nth-child(2) {
+      border-top: 2px solid $dark-gray-color;
+    }
+    &:nth-child(3) {
+      border-right: 2px solid $dark-gray-color;
+      border-bottom: 2px solid $dark-gray-color;
+    }
+    &:nth-child(4) {
+      border-top: 2px solid $dark-gray-color;
+      border-bottom: 2px solid $dark-gray-color;
+      margin-top: -2px;
+    }
+  }
 }

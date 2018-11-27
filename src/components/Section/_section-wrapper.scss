@@ -6,6 +6,12 @@
     align-items: center;
     h2 {
       font-size: 72px;
+      @media only screen and (min-width: $screen-xl) {
+        font-size: 96px;
+      }
+      @media only screen and (min-width: $screen-xxl) {
+        font-size: 120px;
+      }
     }
   }
   .paragraph-header {
@@ -21,6 +27,16 @@
     h4 {
       border-bottom: 1px solid $text-color;
       display: inline-block;
+    }
+    @media only screen and (min-width: $screen-xl) {
+      h4 {
+        font-size: 36px;
+      }
+    }
+    @media only screen and (min-width: $screen-xxl) {
+      h4 {
+        font-size: 42px;
+      }
     }
   }
   @media only screen and (min-width: $screen-sm) {

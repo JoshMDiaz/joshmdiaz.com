@@ -28,4 +28,17 @@
       right: 0;
     }
   }
+  @media only screen and (min-width: $screen-xl) {
+    h1 {
+      font-size: 140px;
+    }
+  }
+  @media only screen and (min-width: $screen-xxl) {
+    h1 {
+      font-size: 180px;
+    }
+    img {
+      max-width: 600px;
+    }
+  }
 }
