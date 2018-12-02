@@ -20,8 +20,8 @@ module.exports = {
         name: `JoshMDiaz`,
         short_name: `JoshMDiaz`,
         start_url: `/`,
-        background_color: `#292929`,
-        theme_color: `#292929`,
+        background_color: `#cfcfcf`,
+        theme_color: `#cfcfcf`,
         display: `minimal-ui`,
         icon: `src/images/manifest-logo.png`, // This path is relative to the root of the site.
       },
