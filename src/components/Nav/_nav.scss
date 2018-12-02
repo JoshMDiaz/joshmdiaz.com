@@ -1,11 +1,10 @@
 .nav {
   background: linear-gradient(-210deg, $primary-red-color 60%, darken($primary-red-color, 20%));
-  height: 100vh;
+  height: calc(100vh + 2px);
   width: 75vw;
-  position: fixed;
+  position: absolute;
   top: 0;
   bottom: 0;
-  // left: 25vw;
   right: 0;
   display: flex;
   justify-content: center;
@@ -23,9 +22,13 @@
     text-align: center;
     @include font-family('Shadows Into Light');
     color: $white-color;
+    cursor: pointer;
+    @include transition;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
   @media only screen and (min-width: $screen-sm) {
     max-width: 500px;
-    // left: auto;
   }
 }
