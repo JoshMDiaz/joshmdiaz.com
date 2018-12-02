@@ -23,7 +23,7 @@ module.exports = {
         background_color: `#292929`,
         theme_color: `#292929`,
         display: `minimal-ui`,
-        icon: `src/images/logo-white.svg`, // This path is relative to the root of the site.
+        icon: `src/images/manifest-logo.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
