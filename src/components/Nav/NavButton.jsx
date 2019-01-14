@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Scroll from 'react-scroll'
-import Nav from './Nav';
+import Nav from './Nav'
 
 const scroller = Scroll.scroller;
  
@@ -55,4 +55,4 @@ class NavButton extends Component {
   }
 }
  
-export default NavButton;
+export default NavButton

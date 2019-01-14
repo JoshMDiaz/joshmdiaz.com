@@ -5,6 +5,7 @@ import pattern from '../../images/pattern.svg'
 import shy from '../../images/shyanne-diaz.png'
 import tayloredTies from '../../images/taylored-ties.png'
 import rdk from '../../images/rdk.png'
+import diazre from '../../images/diazre.svg'
 import Scroll from 'react-scroll'
 const ScrollElement = Scroll.Element;
 
@@ -16,22 +17,28 @@ const workExamples = [
     direction: 'left'
   },
   {
+    logo: diazre,
+    company: 'Diaz Real Estate, LLC',
+    url: 'http://www.diazre.com',
+    direction: 'right'
+  },
+  {
     logo: shy,
     company: 'Shyanne Diaz',
     url: 'http://www.shyannediaz.com',
-    direction: 'right'
+    direction: 'left'
   },
   {
     logo: tayloredTies,
     company: 'Taylored Ties',
     url: 'http://www.tayloredties.com',
-    direction: 'left'
+    direction: 'right'
   },
   {
     logo: rdk,
     company: 'Ronin Dragon Karate',
     url: 'http://www.rdkutah.com',
-    direction: 'right'
+    direction: 'left'
   },
 ]
 
