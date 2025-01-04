@@ -51,8 +51,12 @@ export function Home() {
     const ctx = canvas.getContext('2d')
     if (!ctx) return
 
-    canvas.width = window.innerWidth
-    canvas.height = window.innerHeight
+    const resizeCanvas = () => {
+      canvas.width = window.innerWidth
+      canvas.height = window.innerHeight
+    }
+
+    resizeCanvas()
 
     const particles: Particle[] = []
     for (let i = 0; i < 100; i++) {
@@ -60,48 +64,41 @@ export function Home() {
     }
 
     function animate() {
-      if (ctx && canvas) {
-        ctx.clearRect(0, 0, canvas.width, canvas.height)
-        particles.forEach((particle) => {
-          particle.update(canvas)
-          particle.draw(ctx)
-        })
-      }
+      ctx.clearRect(0, 0, canvas.width, canvas.height)
+      particles.forEach((particle) => {
+        particle.update(canvas)
+        particle.draw(ctx)
+      })
       requestAnimationFrame(animate)
     }
 
     animate()
 
-    const handleResize = () => {
-      canvas.width = window.innerWidth
-      canvas.height = window.innerHeight
-    }
-
-    window.addEventListener('resize', handleResize)
+    window.addEventListener('resize', resizeCanvas)
 
     return () => {
-      window.removeEventListener('resize', handleResize)
+      window.removeEventListener('resize', resizeCanvas)
     }
   }, [])
 
   return (
     <section
-      id='home'
-      className='snap-start relative min-h-screen flex items-center justify-center'
+      id="home"
+      className="snap-start relative min-h-screen flex items-center justify-center"
     >
-      <canvas ref={canvasRef} className='absolute inset-0' />
-      <div className='relative z-10 text-center'>
+      <canvas ref={canvasRef} className="absolute inset-0" />
+      <div className="relative z-10 text-center">
         <Image
-          src='/joshmdiaz.jpg'
-          alt='Josh M. Diaz'
+          src="/joshmdiaz.jpg"
+          alt="Josh M. Diaz"
           width={400}
           height={400}
-          className='rounded-full object-cover mx-auto mb-4 shadow-lg'
+          className="rounded-full object-cover mx-auto mb-4 shadow-lg"
         />
-        <h1 className='text-6xl font-bold mb-4 text-purple-400'>
+        <h1 className="text-6xl font-bold mb-4 text-purple-400">
           Josh M. Diaz
         </h1>
-        <p className='text-2xl text-gray-300'>Front-End Developer</p>
+        <p className="text-2xl text-gray-300">Front-End Developer</p>
       </div>
     </section>
   )
