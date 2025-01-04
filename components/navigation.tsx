@@ -4,7 +4,12 @@ import * as React from 'react'
 import { cn } from '@/lib/utils'
 import { Github, Linkedin, Menu } from 'lucide-react'
 import Image from 'next/image'
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+  SheetTitle,
+} from '@/components/ui/sheet'
 import { Button } from '@/components/ui/button'
 
 const navItems = [
@@ -121,6 +126,7 @@ export function Navigation() {
             </Button>
           </SheetTrigger>
           <SheetContent>
+            <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
             <div className="flex flex-col h-full">
               <ul className="flex-grow space-y-4 mt-8">
                 <NavItems

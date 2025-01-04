@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 class Particle {
   x: number
@@ -12,15 +12,12 @@ class Particle {
   color: string
 
   constructor(canvas: HTMLCanvasElement) {
-    const windowCheck = window !== undefined
-    this.x = windowCheck ? Math.random() * canvas.width : 0
-    this.y = windowCheck ? Math.random() * canvas.height : 0
-    this.size = windowCheck ? Math.random() * 5 + 1 : 0
-    this.speedX = windowCheck ? Math.random() * 3 - 1.5 : 0
-    this.speedY = windowCheck ? Math.random() * 3 - 1.5 : 0
-    this.color = windowCheck
-      ? `hsl(${Math.random() * 60 + 240}, 100%, 50%)`
-      : ''
+    this.x = Math.random() * canvas.width
+    this.y = Math.random() * canvas.height
+    this.size = Math.random() * 5 + 1
+    this.speedX = Math.random() * 3 - 1.5
+    this.speedY = Math.random() * 3 - 1.5
+    this.color = `hsl(${Math.random() * 60 + 240}, 100%, 50%)`
   }
 
   draw(ctx: CanvasRenderingContext2D) {
@@ -44,7 +41,7 @@ class Particle {
   }
 }
 
-export function Home() {
+function ParticleAnimation() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
   useEffect(() => {
@@ -86,12 +83,22 @@ export function Home() {
     }
   }, [])
 
+  return <canvas ref={canvasRef} className="absolute inset-0" />
+}
+
+export function Home() {
+  const [isMounted, setIsMounted] = useState(false)
+
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
+
   return (
     <section
       id="home"
       className="snap-start relative min-h-screen flex items-center justify-center"
     >
-      <canvas ref={canvasRef} className="absolute inset-0" />
+      {isMounted && <ParticleAnimation />}
       <div className="relative z-10 text-center">
         <Image
           src="/joshmdiaz.jpg"
