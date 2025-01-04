@@ -64,12 +64,14 @@ export function Home() {
     }
 
     function animate() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height)
-      particles.forEach((particle) => {
-        particle.update(canvas)
-        particle.draw(ctx)
-      })
-      requestAnimationFrame(animate)
+      if (ctx && canvas) {
+        ctx.clearRect(0, 0, canvas.width, canvas.height)
+        particles.forEach((particle) => {
+          particle.update(canvas)
+          particle.draw(ctx)
+        })
+        requestAnimationFrame(animate)
+      }
     }
 
     animate()

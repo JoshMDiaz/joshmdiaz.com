@@ -7,9 +7,12 @@ import { motion } from 'framer-motion'
 
 export function Contact() {
   return (
-    <section id="contact" className="snap-start min-h-screen flex items-center justify-center py-20 px-6 bg-gray-800">
+    <section
+      id="contact"
+      className="snap-start min-h-screen flex items-center justify-center py-20 px-6 bg-gray-800"
+    >
       <div className="max-w-md w-full">
-        <motion.h2 
+        <motion.h2
           className="text-4xl font-bold mb-8 text-purple-400 text-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -18,7 +21,7 @@ export function Contact() {
         >
           Contact Me
         </motion.h2>
-        <motion.form 
+        <motion.form
           className="space-y-6"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -26,24 +29,49 @@ export function Contact() {
           viewport={{ once: true }}
         >
           <div>
-            <label htmlFor="name" className="block text-sm font-medium mb-2 text-gray-300">
+            <label
+              htmlFor="name"
+              className="block text-sm font-medium mb-2 text-gray-300"
+            >
               Name
             </label>
-            <Input id="name" placeholder="Your Name" className="bg-gray-700 border-gray-600 text-gray-100" />
+            <Input
+              id="name"
+              placeholder="Your Name"
+              className="bg-gray-700 border-gray-600 text-gray-100"
+            />
           </div>
           <div>
-            <label htmlFor="email" className="block text-sm font-medium mb-2 text-gray-300">
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium mb-2 text-gray-300"
+            >
               Email
             </label>
-            <Input id="email" type="email" placeholder="your@email.com" className="bg-gray-700 border-gray-600 text-gray-100" />
+            <Input
+              id="email"
+              type="email"
+              placeholder="your@email.com"
+              className="bg-gray-700 border-gray-600 text-gray-100"
+            />
           </div>
           <div>
-            <label htmlFor="message" className="block text-sm font-medium mb-2 text-gray-300">
+            <label
+              htmlFor="message"
+              className="block text-sm font-medium mb-2 text-gray-300"
+            >
               Message
             </label>
-            <Textarea id="message" placeholder="Your message here..." className="bg-gray-700 border-gray-600 text-gray-100" />
+            <Textarea
+              id="message"
+              placeholder="Your message here..."
+              className="bg-gray-700 border-gray-600 text-gray-100"
+            />
           </div>
-          <Button type="submit" className="w-full bg-purple-600 hover:bg-purple-700 text-white">
+          <Button
+            type="submit"
+            className="w-full bg-purple-600 hover:bg-purple-700 text-white"
+          >
             Send Message
           </Button>
         </motion.form>
@@ -51,4 +79,3 @@ export function Contact() {
     </section>
   )
 }
-
