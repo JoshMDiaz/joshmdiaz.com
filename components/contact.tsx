@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { motion } from 'framer-motion'
+import { Github, Linkedin } from 'lucide-react'
 
 export function Contact() {
   return (
@@ -75,6 +76,32 @@ export function Contact() {
             Send Message
           </Button>
         </motion.form>
+        <motion.div
+          className="mt-8 flex justify-center space-x-6"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          viewport={{ once: true }}
+        >
+          <a
+            href="https://www.linkedin.com/in/joshmdiaz/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-purple-400 transition-colors"
+          >
+            <Linkedin size={24} />
+            <span className="sr-only">LinkedIn</span>
+          </a>
+          <a
+            href="https://github.com/JoshMDiaz"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-purple-400 transition-colors"
+          >
+            <Github size={24} />
+            <span className="sr-only">GitHub</span>
+          </a>
+        </motion.div>
       </div>
     </section>
   )
