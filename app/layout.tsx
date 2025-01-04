@@ -29,9 +29,7 @@ export default function RootLayout({
       >
         <div className="flex flex-col min-h-screen">
           <Navigation />
-          <main className="flex-grow snap-y snap-mandatory overflow-y-scroll">
-            {children}
-          </main>
+          <main className="flex-grow">{children}</main>
         </div>
       </body>
     </html>

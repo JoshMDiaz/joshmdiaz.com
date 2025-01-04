@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 class Particle {
   x: number
@@ -41,7 +41,7 @@ class Particle {
   }
 }
 
-export function Home() {
+function ParticleAnimation() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
   useEffect(() => {
@@ -70,8 +70,8 @@ export function Home() {
           particle.update(canvas)
           particle.draw(ctx)
         })
-        requestAnimationFrame(animate)
       }
+      requestAnimationFrame(animate)
     }
 
     animate()
@@ -83,12 +83,22 @@ export function Home() {
     }
   }, [])
 
+  return <canvas ref={canvasRef} className="absolute inset-0" />
+}
+
+export function Home() {
+  const [isMounted, setIsMounted] = useState(false)
+
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
+
   return (
     <section
       id="home"
       className="snap-start relative min-h-screen flex items-center justify-center"
     >
-      <canvas ref={canvasRef} className="absolute inset-0" />
+      {isMounted && <ParticleAnimation />}
       <div className="relative z-10 text-center">
         <Image
           src="/joshmdiaz.jpg"
