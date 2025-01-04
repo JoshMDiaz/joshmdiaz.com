@@ -1,0 +1,13 @@
+<svg width="120" height="40" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <defs>
+  <linearGradient id="gradient" x1="0%" x2="100%" y1="0%" y2="0%">
+   <stop offset="0%" stop-color="#9333ea"/>
+   <stop offset="100%" stop-color="#3b82f6"/>
+  </linearGradient>
+ </defs>
+ <g class="layer">
+  <title>Layer 1</title>
+  <text fill="url(#gradient)" font-family="Sans-serif" font-size="24" font-weight="lighter" id="svg_1" style="cursor: move;" x="10" y="30">&lt;jmd /&gt;</text>
+ </g>
+</svg>
+
