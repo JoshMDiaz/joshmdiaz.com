@@ -12,12 +12,15 @@ class Particle {
   color: string
 
   constructor(canvas: HTMLCanvasElement) {
-    this.x = Math.random() * canvas.width
-    this.y = Math.random() * canvas.height
-    this.size = Math.random() * 5 + 1
-    this.speedX = Math.random() * 3 - 1.5
-    this.speedY = Math.random() * 3 - 1.5
-    this.color = `hsl(${Math.random() * 60 + 240}, 100%, 50%)`
+    const windowCheck = window !== undefined
+    this.x = windowCheck ? Math.random() * canvas.width : 0
+    this.y = windowCheck ? Math.random() * canvas.height : 0
+    this.size = windowCheck ? Math.random() * 5 + 1 : 0
+    this.speedX = windowCheck ? Math.random() * 3 - 1.5 : 0
+    this.speedY = windowCheck ? Math.random() * 3 - 1.5 : 0
+    this.color = windowCheck
+      ? `hsl(${Math.random() * 60 + 240}, 100%, 50%)`
+      : ''
   }
 
   draw(ctx: CanvasRenderingContext2D) {
@@ -70,8 +73,8 @@ export function Home() {
           particle.update(canvas)
           particle.draw(ctx)
         })
-        requestAnimationFrame(animate)
       }
+      requestAnimationFrame(animate)
     }
 
     animate()
