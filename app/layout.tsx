@@ -23,13 +23,13 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang='en' className='scroll-smooth dark'>
+    <html lang="en" className="scroll-smooth dark">
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased bg-gray-900 text-gray-100`}
       >
-        <div className='flex flex-col min-h-screen'>
+        <div className="flex flex-col min-h-screen">
           <Navigation />
-          <main className='flex-grow snap-y snap-mandatory overflow-y-scroll'>
+          <main className="flex-grow snap-y snap-mandatory overflow-y-scroll">
             {children}
           </main>
         </div>
