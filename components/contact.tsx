@@ -38,7 +38,6 @@ export function Contact() {
             </label>
             <Input
               id="name"
-              placeholder="Your Name"
               className="bg-gray-700 border-gray-600 text-gray-100"
             />
           </div>
@@ -52,7 +51,6 @@ export function Contact() {
             <Input
               id="email"
               type="email"
-              placeholder="your@email.com"
               className="bg-gray-700 border-gray-600 text-gray-100"
             />
           </div>
@@ -65,7 +63,6 @@ export function Contact() {
             </label>
             <Textarea
               id="message"
-              placeholder="Your message here..."
               className="bg-gray-700 border-gray-600 text-gray-100"
             />
           </div>
