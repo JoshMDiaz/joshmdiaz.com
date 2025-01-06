@@ -5,7 +5,6 @@ import {
   CardContent,
   CardDescription,
   CardHeader,
-  CardTitle,
 } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -14,28 +13,28 @@ import Image from 'next/image'
 
 const projects = [
   {
-    title: 'E-commerce Platform',
+    title: 'Pattern Library',
     description:
-      'A fully responsive e-commerce website built with Next.js and Stripe integration.',
-    technologies: ['Next.js', 'React', 'Tailwind CSS', 'Stripe'],
-    link: 'https://example-ecommerce.com',
-    logo: '/placeholder.svg?height=80&width=80',
+      'A component library created for Pattern front-end applications. It is heavily used across dozens of devs and applications.',
+    technologies: ['React', 'Typescript', 'SCSS', 'Storybook'],
+    link: 'https://library.pattern.com',
+    logo: 'https://images.pattern.com/pattern_exp_logos/library.svg',
   },
   {
-    title: 'Task Management App',
+    title: '4RTH',
     description:
-      'A drag-and-drop task management application with real-time updates.',
-    technologies: ['React', 'Firebase', 'Material-UI'],
-    link: 'https://example-taskmanager.com',
-    logo: '/placeholder.svg?height=80&width=80',
+      'A fully responsive score keeping application for 4RTH. It is a mixer format that allows you to play with all other players.',
+    technologies: ['Remix', 'Typescript', 'SCSS'],
+    link: 'https://4rth.joshmdiaz.com/',
+    logo: '/4rth.svg',
   },
   {
-    title: 'Weather Dashboard',
+    title: 'Budgety',
     description:
-      'An interactive weather dashboard using data from multiple APIs.',
-    technologies: ['Vue.js', 'Chart.js', 'OpenWeather API'],
-    link: 'https://example-weather.com',
-    logo: '/placeholder.svg?height=80&width=80',
+      'A simple budgeting application for children. It allows kids to visualize their spending and saving habits.',
+    technologies: ['Next.js', 'Shadcn', 'Tailwind CSS'],
+    link: 'https://budgety.joshmdiaz.com/',
+    logo: '/budgety.svg',
   },
 ]
 
@@ -65,19 +64,15 @@ export function Work() {
               viewport={{ once: true }}
             >
               <Card className="bg-gray-700 border-gray-600">
-                <CardHeader className="flex flex-col items-center">
-                  <div className="w-20 h-20 mb-4">
+                <CardHeader className="flex flex-col items-center gap-1">
+                  <div className="h-20 flex items-center filter saturate-0 brightness-0 invert">
                     <Image
                       src={project.logo}
                       alt={`${project.title} logo`}
-                      width={80}
-                      height={80}
-                      className="rounded-full"
+                      width={200}
+                      height={200}
                     />
                   </div>
-                  <CardTitle className="text-xl text-purple-400">
-                    {project.title}
-                  </CardTitle>
                   <CardDescription className="text-gray-300 text-center">
                     {project.description}
                   </CardDescription>

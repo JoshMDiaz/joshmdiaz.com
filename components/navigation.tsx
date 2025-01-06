@@ -77,6 +77,7 @@ const SocialIcons: React.FC = () => (
 
 export function Navigation() {
   const [activeSection, setActiveSection] = React.useState('')
+  const [isSheetOpen, setIsSheetOpen] = React.useState(false)
 
   React.useEffect(() => {
     const observer = new IntersectionObserver(
@@ -94,6 +95,12 @@ export function Navigation() {
       observer.observe(section)
     })
 
+    // Set initial active section
+    const initialSection = document.querySelector('section[id]')
+    if (initialSection) {
+      setActiveSection(initialSection.id)
+    }
+
     return () => observer.disconnect()
   }, [])
 
@@ -101,6 +108,7 @@ export function Navigation() {
     document.querySelector(href)?.scrollIntoView({
       behavior: 'smooth',
     })
+    setIsSheetOpen(false)
   }
 
   return (
@@ -118,9 +126,14 @@ export function Navigation() {
         <div className="hidden md:flex space-x-4">
           <SocialIcons />
         </div>
-        <Sheet>
+        <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
           <SheetTrigger asChild>
-            <Button variant="ghost" size="icon" className="md:hidden">
+            <Button
+              variant="ghost"
+              size="icon"
+              className="md:hidden"
+              onClick={() => setIsSheetOpen(true)}
+            >
               <Menu className="h-6 w-6" />
               <span className="sr-only">Toggle menu</span>
             </Button>
