@@ -5,7 +5,7 @@ export function Home() {
   const skills = [
     'React Specialist',
     'Typescript Expert',
-    'Frontend Architect',
+    'Front-end Architect',
     'Tailwind CSS Enthusiast',
     'UI/UX Ambassador',
     'Developer Experience Champion',
