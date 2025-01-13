@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'Josh M. Diaz - Front-End Developer Portfolio',
   description: 'My portfolio of front-end dev projects.',
+  icons: {
+    icon: '/favicon.ico',
+  },
 }
 
 export default function RootLayout({
@@ -23,11 +26,14 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="scroll-smooth dark">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased bg-gray-900 text-gray-100`}
+        className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
       >
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen bg-background text-foreground">
           <Navigation />
           <main className="flex-grow">{children}</main>
         </div>
