@@ -21,6 +21,30 @@ const projects = [
     logo: 'https://images.pattern.com/pattern_exp_logos/library.svg',
   },
   {
+    title: 'Pattern UI',
+    description:
+      "A new flavor of Pattern's component library. It is going to replace the exisint Pattern Library.",
+    technologies: ['React', 'Typescript', 'Shadcn', 'Tailwind', 'Storybook'],
+    link: 'https://docs.pattern.com/pattern-ui',
+    logo: 'https://images.pattern.com/pattern_logo.svg',
+  },
+  {
+    title: 'Lilybug',
+    description:
+      'A helpful app for new mothers who want help tracking feedings, diaper changes, and nap times. It helps to have one fewer thing to stress about as a mother.',
+    technologies: ['React Router', 'Supabase', 'Tailwind', 'Tanstack Query'],
+    link: '/',
+    logo: '/Lilybug_light.svg',
+  },
+  {
+    title: 'Budget Buckets',
+    description:
+      'I vibe coded a simple budget app to help save for different things. I wanted a quick glance of where money was being allocated.',
+    technologies: ['Lovable', 'React', 'Tailwind CSS', 'Supabase'],
+    link: 'https://budgety.joshmdiaz.com/',
+    logo: '/bucket-budgets.svg',
+  },
+  {
     title: '4RTH',
     description:
       'A fully responsive score keeping application for 4RTH. It is a mixer format that allows you to play with all other players.',
