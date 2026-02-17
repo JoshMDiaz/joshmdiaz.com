@@ -31,12 +31,12 @@ export function Home() {
         <p className="text-xl md:text-2xl text-gray-300 mb-6">
           I&apos;m a <Typewriter words={skills} />
         </p>
-        <a
+        {/* <a
           href="#contact"
           className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-full transition duration-300 ease-in-out transform hover:scale-105"
         >
           Get in Touch
-        </a>
+        </a> */}
       </div>
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900 pointer-events-none"></div>
     </section>

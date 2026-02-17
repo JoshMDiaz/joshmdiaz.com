@@ -1,7 +1,6 @@
 import { Home } from '@/components/home'
 import { Work } from '@/components/work'
 import { About } from '@/components/about'
-import { Contact } from '@/components/contact'
 
 export default function Page() {
   return (
@@ -9,7 +8,6 @@ export default function Page() {
       <Home />
       <Work />
       <About />
-      <Contact />
     </>
   )
 }

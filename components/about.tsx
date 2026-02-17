@@ -35,7 +35,7 @@ export function About() {
             With{' '}
             <span className="font-semibold text-purple-400">10+ years</span> of
             experience in the field, I specialize in modern web technologies
-            including React, Next.js, and Tailwind CSS. I&apos;m dedicated to
+            including React, Typescript, and Tailwind CSS. I&apos;m dedicated to
             crafting clean, efficient code that brings designs to life and
             enhances user experiences.
           </p>
