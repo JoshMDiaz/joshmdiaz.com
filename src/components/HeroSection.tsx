@@ -51,7 +51,8 @@ const HeroSection = () => {
           >
             I design scalable frontend architectures and build environments
             where engineers have clarity, autonomy, and high standards. My work
-            has supported platform growth from $20M to $2B+ in revenue.
+            has supported platform growth which enabled scaling the company
+            rapdily.
           </motion.p>
 
           <motion.div

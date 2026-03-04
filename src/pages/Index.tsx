@@ -2,10 +2,12 @@ import { Helmet } from 'react-helmet-async'
 import HeroSection from '@/components/HeroSection'
 import MetricsStrip from '@/components/MetricsStrip'
 import PhilosophySection from '@/components/PhilosophySection'
-import ImpactSection from '@/components/ImpactSection'
 import WritingSection from '@/components/WritingSection'
 import ContactSection from '@/components/ContactSection'
 import Footer from '@/components/Footer'
+import EngineeringApproach from '@/components/EngineeringApproach'
+import TechnicalImpact from '@/components/TechnicalImpact'
+import AboutSection from '@/components/AboutSection'
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -27,8 +29,10 @@ const Index = () => {
       <main className="min-h-screen bg-background text-foreground">
         <HeroSection />
         <MetricsStrip />
+        <EngineeringApproach />
+        <TechnicalImpact />
         <PhilosophySection />
-        <ImpactSection />
+        <AboutSection />
         <WritingSection />
         <ContactSection />
         <Footer />
