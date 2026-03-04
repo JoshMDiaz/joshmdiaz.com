@@ -59,7 +59,7 @@ const ContactSection = () => {
             asChild
           >
             <a
-              href="https://www.linkedin.com/in/joshdiaz"
+              href="https://www.linkedin.com/in/joshmdiaz/"
               target="_blank"
               rel="noopener noreferrer"
             >

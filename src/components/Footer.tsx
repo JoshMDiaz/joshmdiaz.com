@@ -7,7 +7,7 @@ const Footer = () => {
         </p>
         <div className="flex gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
           <a
-            href="https://www.linkedin.com/in/joshdiaz"
+            href="https://www.linkedin.com/in/joshmdiaz/"
             target="_blank"
             rel="noopener noreferrer"
           >
