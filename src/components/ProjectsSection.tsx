@@ -84,7 +84,7 @@ const ProjectsSection = () => {
             My Work
           </p>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-            Selected Projects
+            Projects
           </h2>
         </motion.div>
 
