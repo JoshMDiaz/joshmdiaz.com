@@ -35,7 +35,7 @@ const projects: Project[] = [
     description:
       'A helpful app for new mothers who want help tracking feedings, diaper changes, and nap times. It helps to have one fewer thing to stress about as a mother.',
     technologies: ['React Router', 'Supabase', 'Tailwind', 'Tanstack Query'],
-    link: 'https://lilybug.vercel.app/',
+    link: 'http://lilybug.joshmdiaz.com/',
     logo: '/Lilybug_light.svg',
     logoMaxHeight: '60px',
   },
@@ -44,7 +44,7 @@ const projects: Project[] = [
     description:
       'I vibe coded a simple budget app to help save for different things. I wanted a quick glance of where money was being allocated.',
     technologies: ['Lovable', 'React', 'Tailwind CSS', 'Supabase'],
-    link: 'https://bucket-budgets.vercel.app/',
+    link: 'https://bucket-budgets.joshmdiaz.com/',
     logo: '/bucket-budgets.svg',
     logoMaxHeight: '60px',
   },
