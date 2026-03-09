@@ -8,6 +8,7 @@ import Footer from '@/components/Footer'
 import EngineeringApproach from '@/components/EngineeringApproach'
 import TechnicalImpact from '@/components/TechnicalImpact'
 import AboutSection from '@/components/AboutSection'
+import ProjectsSection from '@/components/ProjectsSection'
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -33,6 +34,7 @@ const Index = () => {
         <TechnicalImpact />
         <PhilosophySection />
         <AboutSection />
+        <ProjectsSection />
         <WritingSection />
         <ContactSection />
         <Footer />
