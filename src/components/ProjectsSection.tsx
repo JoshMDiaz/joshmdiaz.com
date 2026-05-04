@@ -15,6 +15,24 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: 'Routr Pro',
+    description:
+      'Plan and navigate optimized property routes. For property inspectors, delivery drivers, and more.',
+    technologies: [
+      'React',
+      'Typescript',
+      'Vite',
+      'Tailwind',
+      'Shadcn',
+      'Supabase',
+      'Resend',
+      'Motion',
+      'Leaflet',
+    ],
+    link: 'https://routrpro.com',
+    logo: '/routr-pro.svg',
+  },
+  {
     title: 'Pattern Library',
     description:
       'A component library created for Pattern front-end applications. It is heavily used across dozens of devs and applications.',
@@ -55,14 +73,6 @@ const projects: Project[] = [
     technologies: ['Remix', 'Typescript', 'SCSS'],
     link: 'https://4rth.joshmdiaz.com/',
     logo: '/4rth.svg',
-  },
-  {
-    title: 'Budgety',
-    description:
-      'A simple budgeting application for children. It allows kids to visualize their spending and saving habits.',
-    technologies: ['Next.js', 'Shadcn', 'Tailwind CSS'],
-    link: 'https://budgety.joshmdiaz.com/',
-    logo: '/budgety.svg',
   },
 ]
 
