@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
-import { ArrowRight, Linkedin } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
+import { FaLinkedin } from 'react-icons/fa'
 import { Button } from '@/components/ui/button'
 
 // Replace this with your actual headshot: import profilePhoto from "@/assets/your-headshot.jpg";
@@ -71,7 +72,7 @@ const HeroSection = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Linkedin className="w-4 h-4" />
+                <FaLinkedin className="w-4 h-4" />
                 Connect on LinkedIn
               </a>
             </Button>

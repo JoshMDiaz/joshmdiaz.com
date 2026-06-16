@@ -1,6 +1,7 @@
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { ArrowRight, Linkedin } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
+import { FaLinkedin } from 'react-icons/fa'
 import { Button } from '@/components/ui/button'
 import profilePhoto from '@/assets/joshmdiaz.jpg'
 
@@ -63,7 +64,7 @@ const ContactSection = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Linkedin className="w-4 h-4" />
+              <FaLinkedin className="w-4 h-4" />
               Connect on LinkedIn
             </a>
           </Button>
